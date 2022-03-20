@@ -1,3 +1,6 @@
 <template>
-    <h1>Product List Page</h1>
+    <div class="container m-5">
+        <h1 class="test">Hai</h1>
+
+    </div>
 </template>

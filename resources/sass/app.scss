@@ -1,0 +1,18 @@
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700');
+
+// variable
+@import 'variables';
+
+// fontawesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+// admin-lte
+// @import url('admin-lte');
+@import '~admin-lte/dist/css/adminlte.css';
+
+// Custom Style
+@import 'my-style';
