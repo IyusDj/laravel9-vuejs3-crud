@@ -12,27 +12,27 @@
 
   </head>
   <body class="hold-transition sidebar-mini">
-    <div class="wrapper">
+    <div class="wrapper" id="app">
 
       <!-- Navbar -->
-      @include('includes.nav')
+      {{-- @include('includes.nav') --}}
       <!-- /.navbar -->
 
       <!-- Main Sidebar Container -->
-      @include('includes.sidebar')
+      {{-- @include('includes.sidebar') --}}
 
       <!-- Content Wrapper. Contains page content -->
-      <div class="content-wrapper" id="app">
+      {{-- <div class="content-wrapper"> --}}
         <!-- Main content -->
-        <div class="content">
-            
-        </div>
+        {{-- <div class="content"> --}}
+          <router-view/>
+        {{-- </div> --}}
         <!-- /.content -->
-      </div>
+      {{-- </div> --}}
       <!-- /.content-wrapper -->
 
       <!-- Main Footer -->
-      @include('includes.footer')
+      {{-- @include('includes.footer') --}}
     </div>
     <!-- ./wrapper -->
 
