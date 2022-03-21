@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Laravel9-Vuejs3-CRUD</title>
@@ -24,12 +23,9 @@
 
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper" id="app">
-
         <!-- Main content -->
         <div class="content">
-          <div class="container-fluid">
-
-          </div><!-- /.container-fluid -->
+            
         </div>
         <!-- /.content -->
       </div>
