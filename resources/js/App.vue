@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import Nav from './components/Navbar.vue'
+import Nav from './layouts/Navbar.vue'
 import Sidebar from './components/Sidebar.vue'
 import Footer from './components/Footer.vue'
 
