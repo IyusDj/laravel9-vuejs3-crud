@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
+import Home from '../components/Home.vue'
 import productIndex from '../components/products/Index.vue'
 import notFound from '../components/notFound.vue'
 
@@ -7,6 +8,11 @@ const routes = [
     {
         path:'/',
         name:'home',
+        component: Home
+    },
+    {
+        path:'/product',
+        name:'product',
         component: productIndex
     },
     {

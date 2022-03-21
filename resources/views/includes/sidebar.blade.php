@@ -1,6 +1,6 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
 <!-- Brand Logo -->
-<a href="index3.html" class="brand-link">
+<a href="#" class="brand-link">
     {{-- <img src="{{ asset('') }}" alt="CRUD" class="brand-image img-circle elevation-3"
         style="opacity: .8"> --}}
     <i class="fa-solid fa-globe ml-3"></i>
@@ -15,7 +15,7 @@
         <img src="{{ asset('img/Yuz_profile_2.png') }}" class="img-circle elevation-2" alt="User Image">
     </div>
     <div class="info">
-        <a href="#" class="d-block">Yuz Dj</a>
+        <a href="/" class="d-block">Yuz Dj</a>
     </div>
     </div>
 
@@ -34,7 +34,7 @@
         </a>
         <ul class="nav nav-treeview">
             <li class="nav-item">
-            <a href="#" class="nav-link active">
+            <a href="{{ route('product.index') }}" class="nav-link active">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <p>Product</p>
             </a>
