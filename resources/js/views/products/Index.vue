@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class=p-1>
+        <div class="py-4">
             
             <!-- Default box -->
             <div class="card">
@@ -8,7 +8,7 @@
                     <h3 class="card-title">Products</h3>
 
                     <div class="card-tools">
-                        <router-link to="/product/add" class="product-add text-gray mr-4">Add</router-link>
+                        <router-link to="/product/add" class="product-add btn-sm btn-success text-white mr-4">Add</router-link>
                         <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
                         <i class="fas fa-minus"></i></button>
                     </div>
