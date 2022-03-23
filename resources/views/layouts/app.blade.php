@@ -13,30 +13,10 @@
   </head>
   <body class="hold-transition sidebar-mini">
     <div class="wrapper" id="app">
-
-      <!-- Navbar -->
-      {{-- @include('includes.nav') --}}
-      <!-- /.navbar -->
-
-      <!-- Main Sidebar Container -->
-      {{-- @include('includes.sidebar') --}}
-
-      <!-- Content Wrapper. Contains page content -->
-      {{-- <div class="content-wrapper"> --}}
-        <!-- Main content -->
-        {{-- <div class="content"> --}}
           <router-view/>
-        {{-- </div> --}}
-        <!-- /.content -->
-      {{-- </div> --}}
-      <!-- /.content-wrapper -->
-
-      <!-- Main Footer -->
-      {{-- @include('includes.footer') --}}
     </div>
-    <!-- ./wrapper -->
 
-    <!-- REQUIRED SCRIPTS -->
+    <!-- Scripts -->
     @include('includes.script')
   </body>
 </html>

@@ -1,5 +1,5 @@
 <template>
-    <Nav/>
+    <Navbar/>
     <Sidebar/>
 
     <!-- Content Wrapper. Contains page content -->
@@ -16,14 +16,14 @@
 </template>
 
 <script>
-import Nav from './layouts/Navbar.vue'
+import Navbar from './components/Navbar.vue'
 import Sidebar from './components/Sidebar.vue'
 import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    Nav,
+    Navbar,
     Sidebar,
     Footer,
   }
