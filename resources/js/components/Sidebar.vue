@@ -2,7 +2,7 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
         <a href="#" class="brand-link">
-            <i class="fa-solid fa-globe ml-3"></i>
+            <i class="fa-solid fa-globe ml-3 mr-2"></i>
             <span class="brand-text font-weight-light">CRUD</span>
         </a>
 
@@ -25,7 +25,7 @@
                     with font-awesome or any other icon font library -->
                 <li class="nav-item has-treeview menu-open">
                 <a href="#" class="nav-link active">
-                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    <i class="nav-icon fas fa-tachometer-alt ml-1"></i>
                     <p>
                     Main Menu
                     <i class="right fas fa-angle-left"></i>
@@ -33,16 +33,22 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                    <router-link to="/product" class="nav-link active">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <p>Product</p>
-                    </router-link>
+                        <router-link to="/product" class="nav-link">
+                            <i class="fa-solid fa-cart-shopping mr-2"></i>
+                            <p>Product</p>
+                        </router-link>
                     </li>
                     <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                        <p>Logout</p>
-                    </a>
+                        <router-link to="/customer" class="nav-link">
+                            <i class="fa-solid fa-people-group mr-2"></i>
+                            <p>Customer</p>
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-arrow-right-from-bracket mr-2 red"></i>
+                            <p>Logout</p>
+                        </a>
                     </li>
                 </ul>
                 </li>
@@ -51,7 +57,7 @@
                     <i class="nav-icon fas fa-th"></i>
                     <p>
                     Etc
-                    <span class="right badge badge-danger">New</span>
+                    <span class="right badge badge-success">New</span>
                     </p>
                 </a>
                 </li>

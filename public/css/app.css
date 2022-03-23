@@ -31219,6 +31219,54 @@ a.text-muted:hover {
 [class*="accent-"] a.btn-dark {
   color: #ffffff;
 }
+.blue {
+  color: #0d6efd;
+}
+
+.indigo {
+  color: #6610f2;
+}
+
+.purple {
+  color: #6f42c1;
+}
+
+.pink {
+  color: #d63384;
+}
+
+.red {
+  color: #dc3545;
+}
+
+.orange {
+  color: #fd7e14;
+}
+
+.yellow {
+  color: #ffc107;
+}
+
+.green {
+  color: #198754;
+}
+
+.teal {
+  color: #20c997;
+}
+
+.cyan {
+  color: #0dcaf0;
+}
+
+.gray {
+  color: #adb5bd;
+}
+
+.black {
+  color: #000;
+}
+
 /*!
  * Font Awesome Free 6.1.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -41485,4 +41533,12 @@ readers do not read off random characters that represent icons */
 
 .fa-zhihu:before {
   content: "\f63f";
+}
+
+.router-link-active {
+  font-weight: bold;
+  font-style: italic;
+}
+.router-link-active i {
+  color: #0dcaf0;
 }
