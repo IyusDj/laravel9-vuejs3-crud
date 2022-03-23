@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class=p-2>
+        <div class=p-1>
             
             <!-- Default box -->
             <div class="card">
@@ -8,10 +8,9 @@
                     <h3 class="card-title">Products</h3>
 
                     <div class="card-tools">
+                        <router-link to="/product/add" class="product-add text-gray mr-4">Add</router-link>
                         <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
                         <i class="fas fa-minus"></i></button>
-                        <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
-                        <i class="fas fa-times"></i></button>
                     </div>
                 </div>
                 <div class="card-body p-0">
@@ -67,16 +66,16 @@
                             <td>
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
-                                        <img alt="Avatar" class="table-avatar" src="../../../../public/img/avatar.png">
+                                        <img alt="Avatar" class="table-avatar" src="../../assets/avatar.png">
                                     </li>
                                     <li class="list-inline-item">
-                                        <img alt="Avatar" class="table-avatar" src="../../../../public/img/avatar2.png">
+                                        <img alt="Avatar" class="table-avatar" src="../../assets/avatar2.png">
                                     </li>
                                     <li class="list-inline-item">
-                                        <img alt="Avatar" class="table-avatar" src="../../../../public/img/avatar3.png">
+                                        <img alt="Avatar" class="table-avatar" src="../../assets/avatar3.png">
                                     </li>
                                     <li class="list-inline-item">
-                                        <img alt="Avatar" class="table-avatar" src="../../../../public/img/avatar04.png">
+                                        <img alt="Avatar" class="table-avatar" src="../../assets/avatar04.png">
                                     </li>
                                 </ul>
                             </td>
@@ -84,10 +83,10 @@
                                 <p>Software</p>
                             </td>
                             <td class="project-state">
-                                <p>Rp. 200.000.000,00</p>
+                                <p>1</p>
                             </td>
                             <td class="project-state">
-                                <p>1</p>
+                                <p>Rp. 200.000.000,00</p>
                             </td>
                             <td class="project-state">
                                 <span class="badge badge-success">Success</span>
