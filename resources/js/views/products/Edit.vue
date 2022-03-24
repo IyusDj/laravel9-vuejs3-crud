@@ -1,12 +1,11 @@
 <template>
     <div class="container py-4">
-
         <section class="content">
             <div class="row">
                 <div class="col-md px-5">
                     <div class="card card-gray-dark">
                         <div class="card-header">
-                            <h3 class="card-title">Product | Add</h3>
+                            <h3 class="card-title">Product | Edit</h3>
                             <div class="card-tools">
                                 <router-link to="/product" class="btn-sm btn-info text-white mr-4">Back</router-link>
                                 <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -47,11 +46,10 @@
             <div class="row pb-4">
                 <div class="col-12 px-5">
                     <a href="#" class="btn-sm btn-secondary">Cancel</a>
-                    <input type="submit" value="Add Data" class="btn-sm btn-success float-right">
+                    <input type="submit" value="Update Data" class="btn-sm btn-success float-right">
                 </div>
             </div>
         </section>
-
 
     </div>
 </template>

@@ -3,7 +3,7 @@
         <!-- Brand Logo -->
         <a href="#" class="brand-link">
             <i class="fa-solid fa-globe ml-3 mr-2"></i>
-            <span class="brand-text font-weight-light">CRUD</span>
+            <span class="brand-text font-weight-light">I N V E N T O R Y</span>
         </a>
 
         <!-- Sidebar -->
