@@ -47,13 +47,13 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr v-for="(product, index) in products" :key="index">
                                 <td>
                                     1
                                 </td>
                                 <td>
                                     <a>
-                                        HRIS App
+                                        {{ product.name }}
                                     </a>
                                     <br/>
                                     <small>
@@ -61,32 +61,26 @@
                                     </small>
                                 </td>
                                 <td>
-                                    <p>Program Aplikasi HRIS berbasis Web</p>
+                                    <p>{{ product.description }}</p>
                                 </td>
                                 <td>
                                     <ul class="list-inline">
                                         <li class="list-inline-item">
-                                            <img alt="Avatar" class="table-avatar" src="../../assets/avatar.png">
+                                            <img alt="Avatar" class="table-avatar" :src="productImg(product.photo)">
                                         </li>
                                         <li class="list-inline-item">
-                                            <img alt="Avatar" class="table-avatar" src="../../assets/avatar2.png">
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <img alt="Avatar" class="table-avatar" src="../../assets/avatar3.png">
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <img alt="Avatar" class="table-avatar" src="../../assets/avatar04.png">
+                                            <img alt="Avatar" class="table-avatar" :src="productImg(product.photo)">
                                         </li>
                                     </ul>
                                 </td>
                                 <td class="project_progress">
-                                    <p>Software</p>
+                                    <p>{{ product.type }}</p>
                                 </td>
                                 <td class="project-state">
-                                    <p>1</p>
+                                    <p>{{ product.quantity }}</p>
                                 </td>
                                 <td class="project-state">
-                                    <p>Rp. 200.000.000,00</p>
+                                    <p>Rp. {{ product.price }}</p>
                                 </td>
                                 <td class="project-state">
                                     <span class="badge badge-success">Success</span>
@@ -120,3 +114,41 @@
         </div>  
     </div>
 </template>
+
+<script>
+    import { onMounted, ref } from "vue"
+    import { useRouter } from "vue-router"
+    // import axios from "axios"
+
+    export default {
+        setup() {
+            // reactive state
+            let products = ref([])
+
+            onMounted( async () => {
+                getProducts()
+            })
+
+            const getProducts = async () => {
+                let response = await axios.get("/api/get_all_product") 
+                products.value = response.data.products  
+                console.log('products', products.value)
+            }
+
+            const addProduct = () => {
+                router.push('/product/add')
+            }
+
+            // Ambil img dari public
+            const productImg = (img) => {
+                return "/images/" + img
+            }
+
+            return {
+                products,
+                addProduct,
+                productImg
+            }
+        }     
+    }
+</script>
