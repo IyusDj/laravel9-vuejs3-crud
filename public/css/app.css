@@ -41542,3 +41542,6 @@ readers do not read off random characters that represent icons */
 .router-link-active i {
   color: #0dcaf0;
 }
+.router-link-active .submenu {
+  color: #0dcaf0;
+}

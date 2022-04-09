@@ -28,7 +28,7 @@
                                     <div class="info-box bg-light">
                                         <div class="info-box-content">
                                             <span class="info-box-text text-center text-muted">Quantity</span>
-                                            <span class="info-box-number text-center text-muted mb-0">1</span>
+                                            <span class="info-box-number text-center text-muted mb-0">{{ product.quantity }}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -36,25 +36,25 @@
                                     <div class="info-box bg-light">
                                         <div class="info-box-content">
                                             <span class="info-box-text text-center text-muted">Price</span>
-                                            <span class="info-box-number text-center text-muted mb-0">Rp. 200.000.000,00</span>
+                                            <span class="info-box-number text-center text-muted mb-0">Rp. {{ product.price }}</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12">
-                                    <h4>HRIS App</h4>
+                                    <h4>{{ product.name }}</h4>
                                     <div class="post">
                                         <div class="user-block">
-                                            <img class="img-circle img-bordered-sm" src="../../assets/avatar.png" alt="user image">
+                                            <img class="img-circle img-bordered-sm" :src="`/storage/uploads/${product.photo}`" alt="user image">
                                             <span class="username">
-                                            <a href="#">Software <small>Platform Website </small></a>
+                                            <a href="#">{{ product.type }} <small>Platform </small></a>
                                             </span>
                                             <span class="description">Ready Stock - 7:45 PM today</span>
                                         </div>
 
                                         <p>
-                                        Program Aplikasi HRIS berbasis Web.
+                                        {{ product.description }}
                                         </p>
                                         <p>
                                         <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i> Demo File 1 v2</a>
@@ -102,3 +102,47 @@
 
     </div>
 </template>
+
+<script>
+import { onMounted, reactive } from "vue"
+import { useRoute } from "vue-router";
+import axios from "axios"
+
+export default {
+    setup() {
+        const product = reactive({
+			name: "",
+			description: "",
+			photo: "",
+			type: "",
+			quantity: "",
+			price: "",          
+		});
+
+        const route = useRoute();
+
+        onMounted( async () => {
+            getProducts()
+        })
+
+        const getProducts = async () => {
+			//get data from api endpoint hris-laravel-9 by id
+			let response = await axios.get(`/api/product/${route.params.id}`)
+                    product.name = response.data.data.name;
+					product.description = response.data.data.description;
+					product.photo = response.data.data.photo;
+					product.type = response.data.data.type;
+					product.quantity = response.data.data.quantity;
+					product.price = response.data.data.price;
+                    console.log(response);                    
+		};    
+
+        return {
+            product,
+            getProducts,
+        }
+
+    }
+
+}
+</script>

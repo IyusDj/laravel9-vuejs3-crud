@@ -35,19 +35,19 @@
                     <li class="nav-item">
                         <router-link to="/product" class="nav-link">
                             <i class="fa-solid fa-cart-shopping mr-2"></i>
-                            <p>Product</p>
+                            <p class="submenu">Product</p>
                         </router-link>
                     </li>
                     <li class="nav-item">
                         <router-link to="/customer" class="nav-link">
                             <i class="fa-solid fa-people-group mr-2"></i>
-                            <p>Customer</p>
+                            <p class="submenu">Customer</p>
                         </router-link>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                             <i class="fa-solid fa-arrow-right-from-bracket mr-2 red"></i>
-                            <p>Logout</p>
+                            <p class="submenu">Logout</p>
                         </a>
                     </li>
                 </ul>
@@ -57,7 +57,7 @@
                     <i class="nav-icon fas fa-th"></i>
                     <p>
                     Etc
-                    <span class="right badge badge-success">New</span>
+                    <span class="right badge badge-danger">New</span>
                     </p>
                 </a>
                 </li>

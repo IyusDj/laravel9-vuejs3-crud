@@ -21,4 +21,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/{any}', [HomeController::class, 'index'])->where('any','.*');
 
-Route::resource('/product', ProductController::class);
+// Route::resource('/product', ProductController::class);
